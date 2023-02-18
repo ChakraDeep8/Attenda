@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidattendancesystem"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <permission android:name="WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.android.attendance.context.ApplicationContext"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_main1"
+        android:label="Attenda"
+        android:theme="@style/AppTheme"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:replace="android:label">
+        <activity
+            android:name="com.android.attendance.activity.MainActivity"
+            android:exported="true"
+            android:label="Attenda">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.attendance.activity.LoginActivity"
+            android:exported="true"
+            android:label="Attenda" />
+        <activity
+            android:name="com.android.attendance.activity.MenuActivity"
+            android:exported="true"
+            android:label="Attenda" />
+        <activity
+            android:name="com.android.attendance.activity.AddFacultyActivity"
+            android:exported="true"
+            android:label="Attenda" />
+        <activity
+            android:name="com.android.attendance.activity.AddStudentActivity"
+            android:exported="true"
+            android:label="Attenda" />
+        <activity
+            android:name="com.android.attendance.activity.ViewFacultyActivity"
+            android:exported="true"
+            android:label="Attenda" />
+        <activity
+            android:name="com.android.attendance.activity.ViewStudentActivity"
+            android:exported="true"
+            android:label="Attenda" />
+        <activity
+            android:name="com.android.attendance.activity.TestActivity"
+            android:exported="true"
+            android:label="Attenda" />
+        <activity
+            android:name="com.android.attendance.activity.empty"
+            android:exported="true"
+            android:label="Attenda" />
+        <activity
+            android:name="com.android.attendance.activity.ViewStudentByBranchYear"
+            android:exported="true"
+            android:label="Attenda" />
+        <activity
+            android:name="com.android.attendance.activity.AddAttandanceSessionActivity"
+            android:exported="true"
+            android:label="Attenda" />
+        <activity
+            android:name="com.android.attendance.activity.AddAttendanceActivity"
+            android:exported="true"
+            android:label="Attenda" />
+        <activity
+            android:name="com.android.attendance.activity.ViewAttendanceByFacultyActivity"
+            android:label="Attenda" />
+        <activity
+            android:name="com.android.attendance.activity.ViewAttendancePerStudentActivity"
+            android:label="Attenda" />
+    </application>
+
+</manifest>

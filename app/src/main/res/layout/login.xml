@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background2" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="337dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Sign In / Sign Up"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextusername"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/roundedtextview"
+        android:ems="10"
+        android:padding="10dp"
+        android:hint="Password"
+        android:drawableLeft="@drawable/login_password_icon"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextusername"
+        android:layout_below="@+id/editTextusername"
+        android:layout_marginTop="14dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextusername"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="110dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/roundedtextview"
+        android:ems="10"
+        android:padding="10dp"
+        android:hint="Username"
+        android:drawableLeft="@drawable/login_username_icon"
+        android:drawablePadding="10dp"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spinnerloginas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        android:minHeight="50dp" />
+
+    <Button
+        android:id="@+id/buttonlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextpassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="75dp"
+        android:background="@drawable/roundedbutton3"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

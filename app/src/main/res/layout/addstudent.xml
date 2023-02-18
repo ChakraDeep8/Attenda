@@ -1,0 +1,255 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textViewFormName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Registration"
+            android:textColor="@color/purple_700"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewFormName"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textStyle="bold"
+
+            android:textColor="#000000" />
+
+        <requestFocus />
+
+        <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/textViewFirstName"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/roundedtextview"
+            android:ems="10"
+            android:hint="First Name"
+            android:drawableLeft="@drawable/login_username_icon"
+            android:drawablePadding="10dp"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp" />
+
+        <TextView
+            android:id="@+id/textViewLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextFirstName"
+            android:layout_below="@+id/editTextFirstName"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edit_txt_department"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/textViewLastName"
+            android:layout_alignLeft="@+id/textViewLastName"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/roundedtextview"
+            android:ems="10"
+            android:hint="Last Name"
+            android:drawableLeft="@drawable/login_username_icon"
+            android:drawablePadding="10dp"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:id="@+id/e_id"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/textViewLastName"
+            android:layout_alignLeft="@+id/textViewLastName"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/roundedtextview"
+            android:ems="10"
+            android:hint="Enrollment ID"
+            android:drawableLeft="@drawable/idcode"
+            android:drawablePadding="10dp"
+            android:inputType="number"
+            android:paddingLeft="15dp" />
+
+        <TextView
+            android:id="@+id/textViewPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_txt_department"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/edit_txt_department"
+            android:layout_marginTop="109dp"
+            android:background="@drawable/roundedtextview"
+            android:ems="10"
+            android:hint="Mobile No."
+            android:drawableLeft="@drawable/mobile"
+            android:drawablePadding="10dp"
+            android:inputType="phone"
+            android:paddingLeft="15dp" />
+
+        <TextView
+            android:id="@+id/textViewUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextPhone"
+            android:layout_below="@+id/editTextPhone"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/Cancel_Button"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerdept"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/roundedbutton3"
+            android:text="Cancel"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/MessageforRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RegisterButton"
+            android:layout_marginTop="54dp"
+            android:layout_toRightOf="@+id/textViewUserName"
+            android:text=""
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textViewPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewUserName"
+            android:layout_marginTop="14dp"
+            android:text=""
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editTextaddr"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/textViewUserName"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/roundedtextview"
+            android:ems="10"
+            android:hint="Address"
+            android:drawableLeft="@drawable/address"
+            android:drawablePadding="10dp"
+            android:paddingLeft="15dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewPassword"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginRight="20dp"
+            android:text="Select Department"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerdept"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="491dp"
+            android:text="Select Year"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinneryear"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="4dp"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/RegisterButton"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinneryear"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="74dp"
+            android:layout_marginRight="74dp"
+            android:layout_toStartOf="@+id/Cancel_Button"
+            android:layout_toLeftOf="@+id/Cancel_Button"
+            android:background="@drawable/roundedbutton3"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</ScrollView>
